@@ -14,8 +14,15 @@
   <div id="root"></div>
   <script type="text/babel">
     (() => {
+
+      const name = "toyama";
       ReactDOM.render(
-        <p>Hello!</p>,
+        //<p>Hello! {name.toUpperCase()}</p>,
+        <div>
+          <p>Hello</p>
+          <hr/>
+          <p>World!</p>
+        </div>,
         document.getElementById('root')
       );
     })();
