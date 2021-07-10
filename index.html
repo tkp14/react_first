@@ -15,10 +15,16 @@
   <script type="text/babel">
     (() => {
 
+      function showMessage() {
+        alert('Hello');
+      }
+
       const name = "toyama";
       ReactDOM.render(
         //<div className="box"></div>,
-        <div style={{width:100, height:100, backgroundColor:'tomato'}}></div>,
+       //<div style={{width:100, height:100, backgroundColor:'tomato'}}></div>,
+        <div style={{width:100, height:100, backgroundColor:'tomato'}}
+        onClick={showMessage}></div>,
         document.getElementById('root')
       );
     })();
